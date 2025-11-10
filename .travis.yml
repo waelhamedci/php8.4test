@@ -1,0 +1,19 @@
+language: php
+
+php:
+  - '8.4'  # Use PHP 8.4
+
+before_install:
+  - sudo apt-get update -y
+  - sudo apt-get install -y libz-dev
+
+install:
+  # Ensure zlib is available and enabled
+  - php -m | grep -i zlib || (echo "zlib not found! Installing..." && sudo apt-get install -y php-zlib)
+
+script:
+  # Print PHP version and modules
+  - php -v
+  - php -m
+  # Run your test
+  - php test.php
