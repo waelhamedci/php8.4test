@@ -2,7 +2,7 @@ language: php
 
 os:
 - linux
-dist: bionic
+dist: xenial
 
 php:
   - '8.4'  # Use PHP 8.4
