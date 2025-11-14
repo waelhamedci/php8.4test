@@ -1,5 +1,9 @@
 language: php
 
+os:
+- linux
+dist: bionic
+
 php:
   - '8.4'  # Use PHP 8.4
 
