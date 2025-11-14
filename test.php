@@ -16,7 +16,7 @@ $decompressed = gzuncompress($compressed);
 
 // Output test result
 if ($decompressed === $data) {
-    echo "zlib is working correctly!";
+    echo "zlib is working correctly!!";
 } else {
     echo "zlib test failed.";
 }
